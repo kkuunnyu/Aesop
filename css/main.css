@@ -1,4 +1,4 @@
-body{font-family: 'Nanum Gothic', sans-serif;color: #333;font-weight: 400;line-height: 1.4;}
+body{font-family: 'Nanum Gothic', sans-serif;color: #333;font-weight: 400;line-height: 1.4; }
 
 img{display: block;}
 
@@ -43,7 +43,7 @@ img{display: block;}
 /* ------------------------------------------------------------ */
 
 /* HEADER 헤더영역-------------------------------------- */
-header{width: 100%;background: rgba(255, 254, 242, 0.5);border-bottom: 1px solid #c3c3c3;position: relative;top: 0;z-index: 100; border-bottom: 1px solid #666;}
+header{width: 100%;background: rgba(255, 254, 242, 0.5);border-bottom: 1px solid #c3c3c3;position: relative;top: 0;z-index: 100; border-bottom: 1px solid #666; overflow: hidden;}
 header .inner{height: 120px;}
 header .inner h1{position: absolute;top: 0;bottom: 0;margin: auto;height: 75px;}
 header .inner .sub-menu{position: absolute;right: 0;top: 10px;display: flex;}
@@ -63,7 +63,7 @@ header .inner .sub-menu .search span{position: absolute;top: 5px;bottom: 0;margi
 header .inner .sub-menu .search.focused span{opacity: 0;}
 
 /* main menu---------- */
-header .inner nav ul.main-menu{display: flex;position: absolute;right: 0;bottom: 0;}
+header .inner nav ul.main-menu{display: flex;position: absolute;right: 0;bottom: 0;overflow: hidden;}
 header .inner nav ul.main-menu > li .item__name{padding: 10px 20px;cursor: pointer;font-size: 14px; transition: all 0.4s;}
 header .inner nav ul.main-menu > li:hover .item__name{background: rgba(255, 254, 242, 0.5);color: #dd6e18;text-decoration: underline;border-radius: 6px 6px 0 0; border-bottom: 1px solid #dd6e18;}
 
@@ -78,7 +78,7 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
 .item__contents ul.inner li > ul li:hover{color: #dd6e18;}
 
 /* 2층 */
-.contents__texture{background: rgba(98, 86, 68, 0.5);padding: 20px 0; height: 50px;}
+.contents__texture{background: rgba(98, 86, 68, 0.5);padding: 20px 0; height: 50px;overflow: hidden;}
 .contents__texture .inner h4 a{color: #333;font-weight: bold;}
 .contents__texture .inner p a{color: #dd6e18;margin: 5px 0 15px;}
 
@@ -86,6 +86,7 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
 .swiper {
   width: 100%;
   height: 800px;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -95,6 +96,7 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .swiper-slide img{
@@ -102,6 +104,7 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
   width: 100%;
   height: 800px;
   object-fit: cover;
+  overflow: hidden;
 }
 .swiper .swiper-button-next{color: rgba(255,255,255,0.8);}
 .swiper .swiper-button-prev{color: rgba(255,255,255,0.8);}
@@ -111,8 +114,8 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
 
 /* product */
 #product1{width: 100%; height: 400px; padding: 10px; background:#ffe9df;}
-#product1 #marquee{background-color: rgba(255, 253, 251,0.5); height: 50px;line-height: 50px; border-radius: 20px;}
-#product1 #marquee h3{font-size: 30px; font-weight: bold;}
+#product1 #marquee{background-color: rgba(255, 253, 251,0.5); height: 50px;line-height: 50px; border-radius: 20px;overflow: hidden;}
+#product1 #marquee h3{font-size: 30px; font-weight: bold;overflow: hidden;}
 #product1 h1{text-align: center; margin: 40px; font-size: 40px; font-weight: bold;}
 #product1 .pd1{display: flex; justify-content: center; align-items: center;background:#fff4ee; width: 100%;}
 #product1 .pd1 li{margin:50px;}
@@ -122,12 +125,12 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
 #product1 .pd1 li h4{font-size: 12px; text-align: center;}
 #product1 .pd1 li h5{font-size: 11px; text-align: center;}
 
-#product2{width: 100%; height: 400px; padding: 10px; margin-top: 100px;background:#fff4ee;}
-#product2 .pd2{display: flex; justify-content: center; align-items: center;width: 100%;}
-#product2 .pd2 li{margin:50px;}
-#product2 .pd2 li img{transition: all 0.3s; margin: 10px; width: 250px; height: auto;}
-#product2 .pd2 li img:hover{opacity: 0.5;}
-#product2 .pd2 li h3{font-size: 15px; text-align: center; font-weight: bold; margin: 5px;}
+  #product2{width: 100%; height: 400px; padding: 10px; margin-top: 100px;background:#fff4ee;}
+  #product2 .pd2{display: flex; justify-content: center; align-items: center;width: 100%;}
+  #product2 .pd2 li{margin:50px;}
+  #product2 .pd2 li img{transition: all 0.3s; margin: 10px; width: 250px; height: auto;}
+  #product2 .pd2 li img:hover{opacity: 0.5;}
+  #product2 .pd2 li h3{font-size: 15px; text-align: center; font-weight: bold; margin: 5px;}
 #product2 .pd2 li h4{font-size: 12px; text-align: center;}
 #product2 .pd2 li h5{font-size: 11px; text-align: center;}
 
@@ -139,29 +142,29 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
 .youtube .youtube__area #player{width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
 
 /* 유튜브 영상 클릭 안되는 커버 */
-.youtube .youtube__cover{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.youtube .youtube__cover{position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;}
 
 /* STORE ROCATE------------------------- */
-.store-rocate{background: url(../images/store_bg.jpg);}
+.store-rocate{background: url(../images/store_bg.jpg); overflow: hidden;}
 .store-rocate .inner{height: 400px;}
 .store-rocate .inner .store_logo{position: absolute;top: 110px;left: 0;}
 .store-rocate .inner .text-group{position: absolute;top: 124px;left: 208px;}
 .store-rocate .inner .store_img{position: absolute;top: 0;right: 0;}
 
 /* FEEL THE NATURE----------------------- */
-.feel-the-nature{background: url(../images/feel_bg.jpg) no-repeat center fixed;background-size: cover;}
+.feel-the-nature{background: url(../images/feel_bg.jpg) no-repeat center fixed;background-size: cover; overflow: hidden;}
 .feel-the-nature .fixed{color: #fff; font-size: 20px; align-items: center; justify-content: center;text-align: center;}
 .feel-the-nature .inner{padding: 110px 0;}
 .feel-the-nature .inner .text-group{width: 360px;display: flex;flex-wrap: wrap;justify-content: flex-end;}
 .feel-the-nature .inner .text-group .text2{margin: 40px 0;}
 
 /* AESOP STORE-------------------------- */
-.aesop-store{background: url(../images/aesop_store_bg.jpg) no-repeat center fixed;background-size: cover;}
+.aesop-store{background: url(../images/aesop_store_bg.jpg) no-repeat center fixed;background-size: cover; overflow: hidden;}
 .aesop-store .inner{height: 600px;display: flex;justify-content: center;align-items: center;}
 .aesop-store .inner .medal{width: 334px;height: 334px;cursor: pointer;perspective: 600px;}
 
 .aesop-store .inner .medal .front,
-.aesop-store .inner .medal .back{width: 334px;height: 334px;backface-visibility: hidden;transition: all 1s;position: absolute;}
+.aesop-store .inner .medal .back{width: 334px;height: 334px;backface-visibility: hidden;transition: all 1s;position: absolute;overflow: hidden;}
 
 .aesop-store .inner .medal .front{position: absolute;transform: rotateY(0);}
 .aesop-store .inner .medal:hover .front{transform: rotateY(-180deg);}
@@ -170,7 +173,7 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
 .aesop-store .inner .medal:hover .back{transform: rotateY(0);}
 
 /* FOOTER */
-footer{background: #fff;border-top: 1px solid #333;}
+footer{background: #fff;border-top: 1px solid #333; overflow: hidden;}
 footer .inner{padding: 40px 0 60px;} 
 
 footer .inner .menu{display: flex;justify-content: center;} 
@@ -194,4 +197,4 @@ footer .inner .copyright{color: #666;text-align: center;margin: 10px 0 20px;}
 footer .inner > img{margin: auto;}
 
 /* TOP BUTTON----------------------------- */
-#to-top{position: fixed;right: 20px;bottom: 30px;color: #333;border: 2px solid #888;padding: 10px;border-radius: 50px;display: flex;align-items: center;cursor: pointer;background: #fff;z-index: 20;}
+#to-top{position: fixed;right: 20px;bottom: 30px;color: #333;border: 2px solid #888;padding: 10px;border-radius: 50px;display: flex;align-items: center;cursor: pointer;background: #fff;z-index: 20;overflow: hidden;}

@@ -122,6 +122,8 @@ floatingObject('.floating3',1.5,20);
 
 //swiper
 var swiper = new Swiper(".mySwiper", {
+  loop:true,
+  loopAdditionalSlides: 1,
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {

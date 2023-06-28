@@ -29,6 +29,10 @@ img{display: block;}
 /* 오 > 왼 등장하는 모션의 시작위치 */
 .back-to-position.to-left{transform: translateX(150px);}
 
+/* 위 > 아래 등장하는 모션의 시작위치 */
+.back-to-position.to-down{transform: translateY(-150px);}
+
+
 /* show를 추가가되면 실행할 모션------- */
 .show .back-to-position{opacity: 1;transform: translateX(0);}
 .show .back-to-position.delay-0{transition-delay: 0s;}
@@ -43,7 +47,7 @@ img{display: block;}
 /* ------------------------------------------------------------ */
 
 /* HEADER 헤더영역-------------------------------------- */
-header{width: 100%;background: rgba(255, 254, 242, 0.5);border-bottom: 1px solid #c3c3c3;position: relative;top: 0;z-index: 100; border-bottom: 1px solid #666; overflow: hidden;}
+header{width: 100%;background: rgba(255, 254, 242, 0.5);border-bottom: 1px solid #c3c3c3;position: relative;top: 0;z-index: 100; border-bottom: 2px solid #666; overflow: hidden;}
 header .inner{height: 120px;}
 header .inner h1{position: absolute;top: 0;bottom: 0;margin: auto;height: 75px;}
 header .inner .sub-menu{position: absolute;right: 0;top: 10px;display: flex;}
@@ -155,8 +159,8 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
 .feel-the-nature{background: url(../images/feel_bg.jpg) no-repeat center fixed;background-size: cover; overflow: hidden;}
 .feel-the-nature .fixed{color: #fff; font-size: 20px; align-items: center; justify-content: center;text-align: center;}
 .feel-the-nature .inner{padding: 110px 0;}
-.feel-the-nature .inner .text-group{width: 360px;display: flex;flex-wrap: wrap;justify-content: flex-end;}
-.feel-the-nature .inner .text-group .text2{margin: 40px 0;}
+.feel-the-nature .inner .text-group{width: 760px;display: flex;justify-content: center;margin-left: 150px;}
+.feel-the-nature .inner .text-group .text2{margin: 50px 0;margin-left: 100px;}
 
 /* AESOP STORE-------------------------- */
 .aesop-store{background: url(../images/aesop_store_bg.jpg) no-repeat center fixed;background-size: cover; overflow: hidden;}
@@ -167,8 +171,8 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
 .aesop-store .inner .medal .back{width: 334px;height: 334px;backface-visibility: hidden;transition: all 1s;position: absolute;overflow: hidden;}
 
 .aesop-store .inner .medal .front{position: absolute;transform: rotateY(0);}
-.aesop-store .inner .medal:hover .front{transform: rotateY(-180deg);}
-.aesop-store .inner .medal .back{transform: rotateY(-180deg);}
+.aesop-store .inner .medal:hover .front{transform: rotateX(-180deg);}
+.aesop-store .inner .medal .back{transform: rotateX(-180deg);}
 .aesop-store .inner .medal .back .btn{position: absolute;top: 230px;left: 0;right: 0;margin: auto;}
 .aesop-store .inner .medal:hover .back{transform: rotateY(0);}
 

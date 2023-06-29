@@ -32,6 +32,9 @@ img{display: block;}
 /* 위 > 아래 등장하는 모션의 시작위치 */
 .back-to-position.to-down{transform: translateY(-150px);}
 
+/* 아래 > 위 등장하는 모션의 시작위치 */
+.back-to-position.to-up{transform: translateY(150px);}
+
 
 /* show를 추가가되면 실행할 모션------- */
 .show .back-to-position{opacity: 1;transform: translateX(0);}
@@ -156,10 +159,10 @@ header .inner nav ul.main-menu > li .item__contents .contents__menu{background: 
 .store-rocate .inner .store_img{position: absolute;top: 0;right: 0;}
 
 /* FEEL THE NATURE----------------------- */
-.feel-the-nature{background: url(../images/feel_bg.jpg) no-repeat center fixed;background-size: cover; overflow: hidden;}
+.feel-the-nature{background: url(../images/feel_bg.jpg) no-repeat center fixed;background-size: cover; overflow: hidden; height: 1000px;}
 .feel-the-nature .fixed{color: #fff; font-size: 20px; align-items: center; justify-content: center;text-align: center;}
 .feel-the-nature .inner{padding: 110px 0;}
-.feel-the-nature .inner .text-group{width: 760px;display: flex;justify-content: center;margin-left: 150px;}
+.feel-the-nature .inner .text-group{width: 760px;display: flex;justify-content: center;margin-left: 150px;margin-top: 250px;}
 .feel-the-nature .inner .text-group .text2{margin: 50px 0;margin-left: 100px;}
 
 /* AESOP STORE-------------------------- */
